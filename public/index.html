@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <script src='vendors/angular.min.js'></script>
+    <script src='vendors/angular-route.min.js'></script>
+    <script src='client.js'></script>
+    <script src='controllers/red.controller.js'></script>
+    <script src='controllers/green.controller.js'></script>
+    <script src='controllers/blue.controller.js'></script>
+    <script src='controllers/yellow.controller.js'></script>
+    
+
+
+</head>
+
+<style>
+    h1 {
+        transition: transform .09s;
+    }
+    h1:hover {
+        transform: rotate(3deg);
+    }
+</style>
+
+<body ng-app="colorApp">
+    Color Application
+    <ul>
+        <li><a href="#!">Home Page</a></li>
+        <li><a href="#!red">Red Page</a></li>
+        <li><a href="#!yellow">Yellow Page</a></li>
+        <li><a href="#!green">Green Page</a></li>
+        <li><a href="#!blue">Blue Page</a></li>
+
+
+    </ul>
+    <ng-view>
+
+    </ng-view>
+</body>
+
+</html>
